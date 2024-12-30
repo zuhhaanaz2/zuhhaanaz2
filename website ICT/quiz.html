@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dopamine Detox-Quiz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /*font-family: 'Arial', sans-serif;*/
+      background-color: #f0f2f5; /* Soft background color */
+      color: #333;
+    }
+
+ /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: grey;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+
+    .header-row {
+      background-color: #20b2aa; /* Green header */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      font-family: Georgia, serif;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      gap: 20px;
+ justify-content:space-between;
+    }
+
+    /* Left Section: Rotating Images */
+    .image-section {
+      flex: 1;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+  /* .image-section button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #20b2aa;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top:20px;
+    }
+
+    .image-section button:hover {
+      background-color: grey;
+    }*/
+
+    /* Right Section: Form */
+    .form-section {
+      flex: 1;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      color:black;
+    }
+
+    .form-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #20b2aa;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      
+      font-weight: bold;
+      color: black;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-group textarea {
+      resize: none;
+    }
+
+    .form-group button {
+     
+      padding: 10px;
+      background-color: #20b2aa;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s;
+      align:center;
+    }
+
+    .form-group button:hover {
+      background-color:grey;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+            <a href="home.html">Home</a> 
+            <a href="about dopamine.html">About Dopamine</a> 
+            <a href="Dopamine detox.html"> Detox </a> 
+            <a href="quiz.html">Addiction Quiz</a>
+            <a href="new contact.html"> Contact Us </a>
+        </nav>
+
+  <!-- Header -->
+  <div class="header-row">
+    Is Dopamine Addiction Holding You Back?
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Left Section: Rotating Images -->
+    <div class="image-section">
+      <img id="rotatingImage" src="image1.jpg" alt="Dopamine Addiction">
+     <!-- <button onclick="window.open('https://www.example.com', '_blank')">More Info</button>-->
+    </div>
+
+    <!-- Right Section: Form -->
+    <div class="form-section">
+      <h2>Help Us Understand</h2>
+      <form action="#" method="post">
+        <!-- Question 1 -->
+        <div class="form-group">
+          <label for="experience">Have you experienced dopamine addiction?</label>
+          <select id="experience" name="experience" required>
+            <option value="">-- Select an option --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="form-group">
+          <label for="frequency">How often do you feel addicted?</label>
+          <select id="frequency" name="frequency" required>
+            <option value="">-- Select an option --</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Frequently">Frequently</option>
+            <option value="Always">Always</option>
+          </select>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="form-group">
+          <label for="usage">How much time do you spend daily on social media (in hours)?</label>
+          <input type="number" id="usage" name="usage" min="0" step="0.5" placeholder="Enter hours">
+        </div>
+
+        <!-- Question 4 -->
+        <div class="form-group">
+          <label for="effects">What effects have you experienced? (Check all that apply)</label>
+          <textarea id="effects" name="effects" rows="4" placeholder="E.g., Lack of focus, mood swings, procrastination"></textarea>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="form-group">
+          <label>Have you tried controlling the addiction?</label>
+          <div>
+            <label><input type="radio" name="control" value="Yes" required> Yes</label>
+            <label><input type="radio" name="control" value="No"> No</label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <script>
+    // Rotating Images
+    const images = ['image1.jpg', 'image2.jpg', 'image3.jpg','image4.jpg'];
+    let currentIndex = 0;
+
+    function rotateImage() {
+      const imageElement = document.getElementById('rotatingImage');
+      currentIndex = (currentIndex + 1) % images.length;
+      imageElement.src = images[currentIndex];
+    }
+
+    setInterval(rotateImage, 3000); // Change image every 3 seconds
+  </script>
+
+</body>
+</html>

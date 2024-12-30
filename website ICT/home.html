@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dopamine Detox - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+           /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: grey;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        .image-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+            height: 500px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 315px;
+            right: 185px;
+            color: #fff;
+            font-size: 1.5rem;
+            background-color: black;
+            border-radius:50%;
+            display:flex;
+            padding: 15px;
+            font-family:'times new roman';
+        }
+
+        .questions {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            font-family:brush script mt;
+            }
+
+
+        .button-container {
+            position: absolute;
+            bottom: 40px;
+            right: 0%;
+            transform: translateX(-50%);
+        }
+
+        .button {
+            background-color:#191970;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+   .button:hover {
+            background-color: #4682b4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="home.html">Home</a> 
+            <a href="about dopamine.html">About Dopamine</a> 
+            <a href="Dopamine detox.html"> Detox </a> 
+            <a href="quiz.html">Addiction Quiz</a>
+            <a href="new contact.html"> Contact Us </a>
+        </nav>
+
+        <div class="image-container">
+            <img src="home img1.jpg"> 
+            <div class="text-overlay">Dopamine <br>Detox</div>
+            <div class="questions">
+                <h2>Tired of constant scroll ?</h2>
+                <h2>Is your phone ruling your life ?</h2>
+            </div>
+        </div>
+<div class="button-container">
+    <a href="Dopamine detox.html" class="button"> Start Your Detox </a>
+        </div>
+    </div>
+
+</body>
+</html>

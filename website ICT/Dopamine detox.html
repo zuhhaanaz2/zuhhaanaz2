@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dopamine Detox Journey</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Ensure proper stacking of header and content */
+            align-items: center;
+            background-color: #20b2aa;
+        }
+
+
+
+/* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+           width:100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+
+        }
+
+        nav a:hover {
+            background-color: #696969;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+
+        .header-row {
+            background-color: #2f4f4f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 40px;
+            font-weight: bold;
+            width: 100%;
+       margin-bottom:30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            height: 80vh;
+            grid-template-areas: 
+                "box1 box2 box3"
+                "box4 image box5"
+                "box6 box7 box8";
+
+        }
+
+        .box {
+            background-color: #f0ffff;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+ margin-top:20px;
+ margin-bottom:20px;
+        }
+
+        .box h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 1.2em;
+        }
+
+        .image {
+            grid-area: image;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box1 { grid-area: box1; }
+        .box2 { grid-area: box2; }
+        .box3 { grid-area: box3; }
+        .box4 { grid-area: box4; }
+        .box5 { grid-area: box5; }
+        .box6 { grid-area: box6; }
+        .box7 { grid-area: box7; }
+        .box8 { grid-area: box8; }
+    </style>
+</head>
+<body>
+
+<nav>
+            <a href="home.html">Home</a> 
+            <a href="about dopamine.html">About Dopamine</a> 
+            <a href="Dopamine detox.html"> Detox </a> 
+            <a href="quiz.html">Addiction Quiz</a>
+            <a href="new contact.html"> Contact Us </a>
+        </nav>
+    <div class="header-row">
+        Escape The Digital Noise 😊 Reset & Thrive
+    </div>
+
+    <div class="container">
+        <div class="box box1">
+            <h2>1. Set Time Limits </h2>
+            <p>Use app timers to reduce usage .</p>
+        </div>
+        <div class="box box2">
+            <h2>2. Log Out or Delete Apps</h2>
+            <p>Make access less convenient.</p>
+        </div>
+        <div class="box box3">
+            <h2>3. Turn Off Notifications</h2>
+            <p>Minimize distractions.</p>
+        </div>
+        <div class="box box4">
+            <h2>4. Dopamine Fasting </h2>
+            <p>Try a day or week-long social media fast to reset your brain’s reward system.</p>
+        </div>
+
+        <div class="image">
+            <img src="dopamine detox img.png" alt="Image Centered">
+        </div>
+
+        <div class="box box5">
+           <h2>5. Replace with Hobbies</h2>
+            <p>Read, exercise, or try offline activities.</p>
+        </div>
+        <div class="box box6">
+           <h2>6. Schedule Usage</h2>
+            <p>Allocate specific times for social media.</p>
+           
+        </div>
+        <div class="box box7">
+
+<h2>7.Create Phone-Free Zones </h2>
+            <p>Keep your phone away during meals, work, or bed.</p>
+
+        </div>
+        <div class="box box8">
+           
+<h2>8.Track Progress </h2>
+            <p> Monitor screen time and celebrate improvements.</p> 
+        </div>
+    </div>
+</body>
+</html>
